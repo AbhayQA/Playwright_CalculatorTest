@@ -1,0 +1,22 @@
+{
+  "name": "playwright-automated-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "All_Tests": "npx playwright test",
+    "Run_Chrome_Tests_With_Allure_Report": "npx playwright test --project=run_tests_in_Chrome --reporter=line,allure-playwright",
+    "Chrome_Tests": "npx playwright test --project=run_tests_in_Chrome",
+    "Chrome_Mobile_Tests": "npx playwright test --project=run_tests_in_Mobile_Chrome",
+    "Safari_Tests": "npx playwright test --project=run_tests_in_Safari",
+    "Safari_Mobile_Tests": "npx playwright test --project=run_tests_in_Mobile_Safari",
+    "Generate_Allure_Reprots": "npx allure generate ./allure-results --clean",
+    "Launch_Allure_Reports": "allure serve"
+  },
+  "author": "Abhay Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.23.4",
+    "allure-playwright": "^2.0.0-beta.18"
+  }
+}
